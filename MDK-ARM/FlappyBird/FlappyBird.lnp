@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"flappybird\startup_stm32f103xb.o"
+"flappybird\main.o"
+"flappybird\stm32f1xx_it.o"
+"flappybird\stm32f1xx_hal_msp.o"
+"flappybird\oled.o"
+"flappybird\oled_data.o"
+"flappybird\stm32f1xx_hal_gpio_ex.o"
+"flappybird\stm32f1xx_hal_tim.o"
+"flappybird\stm32f1xx_hal_tim_ex.o"
+"flappybird\stm32f1xx_hal.o"
+"flappybird\stm32f1xx_hal_rcc.o"
+"flappybird\stm32f1xx_hal_rcc_ex.o"
+"flappybird\stm32f1xx_hal_gpio.o"
+"flappybird\stm32f1xx_hal_dma.o"
+"flappybird\stm32f1xx_hal_cortex.o"
+"flappybird\stm32f1xx_hal_pwr.o"
+"flappybird\stm32f1xx_hal_flash.o"
+"flappybird\stm32f1xx_hal_flash_ex.o"
+"flappybird\stm32f1xx_hal_exti.o"
+"flappybird\system_stm32f1xx.o"
+--strict --scatter "FlappyBird\FlappyBird.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FlappyBird.map" -o FlappyBird\FlappyBird.axf
